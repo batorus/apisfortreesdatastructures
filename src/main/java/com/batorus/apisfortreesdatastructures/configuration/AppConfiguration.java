@@ -1,11 +1,8 @@
 package com.batorus.apisfortreesdatastructures.configuration;
 
-
-
 import com.batorus.apisfortreesdatastructures.model.AVL.AVLTree;
 import com.batorus.apisfortreesdatastructures.model.BinarySearchTree.BST;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

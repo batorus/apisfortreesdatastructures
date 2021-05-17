@@ -1,6 +1,5 @@
 package com.batorus.apisfortreesdatastructures.restcontrollers;
 
-
 import com.batorus.apisfortreesdatastructures.model.BinarySearchTree.BST;
 import com.batorus.apisfortreesdatastructures.model.dto.IntegerDTO;
 import com.batorus.apisfortreesdatastructures.model.dto.IntegerList;
@@ -52,19 +51,5 @@ public class BSTController {
 
         return new ResponseEntity<>("Element not in the tree!", HttpStatus.NOT_FOUND);
     }
-
-
-
-    //    @PostMapping(path = "/node", consumes = {MediaType.APPLICATION_JSON_VALUE},
-//                                             produces = {MediaType.APPLICATION_JSON_VALUE})
-//    public ResponseEntity<?> createNodeAction(@RequestBody Integer integer) {
-//
-//        binarySearchTreeService.insert(integer);
-//
-//        List<Integer> list = new ArrayList<>();
-//        for (Integer value : binarySearchTreeService) list.add(value);
-//
-//        return new ResponseEntity<>(list, HttpStatus.OK);
-//    }
 
 }

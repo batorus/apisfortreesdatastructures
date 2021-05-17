@@ -28,7 +28,7 @@ public class AVLTreeController {
 
     //send data like this: {"integers":[5,6,9]}
     @PostMapping(path = "/avltreenodes", consumes = {MediaType.APPLICATION_JSON_VALUE},
-            produces = {MediaType.APPLICATION_JSON_VALUE})
+                                         produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> createNodesAction(@RequestBody IntegerList integerDto) {
 
         avlTreeService.insertElements(integerDto.getIntegerList());
